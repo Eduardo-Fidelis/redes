@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Velocidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="logo.jpg" type="image/jpg"> <!-- Atualizado para PNG -->
+
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Teste de Velocidade da Internet</h1>
+            <button id="startTest">Iniciar Teste</button>
+            <button id="autoTest">Medição Automática</button>
+
+            <p id="status">Clique no botão para iniciar o teste.</p>
+            <p id="result"></p>
+            <div id="result-container">
+                <div id="color-box"></div>
+                <div id="result"></div>
+            </div>
+
+            <div id="button-container">
+                <button id="logButton" class="logButton">
+                    <i class="fas fa-file-alt"></i> Log
+                </button>
+            </div>
+
+
+            <div id="logModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Histórico de Medições</h2>
+                    <ul id="logList"></ul>
+                </div>
+            </div>
+
+            <div id="ipinfo-container">
+                <h2>Informações do IP</h2>
+                <button id="fetchIpInfo">Buscar Informações do IP</button>
+                <div id="ipinfo-results"></div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div style="text-align:center; padding:20px; background-color:#333;">
+            <p>&copy; 2024 Tech Info. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Edu Fidelis | <a href="mailto:seuemail@exemplo.com">Contato</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
